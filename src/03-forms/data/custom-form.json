@@ -1,0 +1,73 @@
+[
+  {
+    "type": "text",
+    "name": "firstName",
+    "placeholder": "Jonathan",
+    "label": "First Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "First Name is required"
+      },
+      {
+        "type": "minLength",
+        "message": "First name must be at least 5 characters long",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "type": "text",
+    "name": "lastName",
+    "placeholder": "Bracho",
+    "label": "Last Name",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Last Name is required"
+      },
+      {
+        "type": "minLength",
+        "message": "Last name must be at least 5 characters long",
+        "value": 5
+      }
+    ]
+  },
+  {
+    "type": "email",
+    "name": "email",
+    "placeholder": "john@google.com",
+    "label": "Email",
+    "value": "",
+    "validations": [
+      {
+        "type": "required",
+        "message": "Email is required"
+      },
+      {
+        "type": "email",
+        "message": "Email is not valid"
+      }
+    ]
+  },
+  {
+    "type": "select",
+    "name": "favoriteGame",
+    "label": "Favorite Game",
+    "value": "",
+    "options": [
+      { "id": 1, "label": "Super Smash" },
+      { "id": 2, "label": "Metal Gear" },
+      { "id": 3, "label": "Resident Evil" },
+      { "id": 4, "label": "LOL" }
+    ],
+    "validations": [
+      {
+        "type": "required",
+        "message": "At least an option is required"
+      }
+    ]
+  }
+]
